@@ -5,8 +5,14 @@ const Sidebar = () => {
     return (
 
         <div className="m-5 p-5">
-            <Link to='/allRegistration'><h3>All Registration</h3></Link>
-            <Link to="/addEvent"><h3>Add Event</h3></Link>
+           
+
+
+            <Link to="/addEvent">
+            <button className="btn btn-primary mt-5">
+                <h3>Add Event</h3>
+                </button>
+                </Link>
         </div>
 
     );

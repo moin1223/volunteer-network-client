@@ -34,9 +34,9 @@ return (
         <Route path="/login">
            <Login/>
         </Route>
-        <Route path="/registerEvent/:id">
+        <PrivateRoute  path="/registerEvent/:id">
             <RegisterEvent />
-          </Route>
+          </PrivateRoute >
        
         <PrivateRoute path="/myEvents">
            

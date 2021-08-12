@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 import SingleRegistration from '../SingleRegistration/SingleRegistration';
 
@@ -16,10 +15,10 @@ const AllRegistration = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-4 col-sm-12">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 col-sm-12">
                     <h3 className="m-5 text-center">All Registration</h3>
                     <table className="table">
                         <thead>

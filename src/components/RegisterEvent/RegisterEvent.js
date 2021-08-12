@@ -49,14 +49,14 @@ const RegisterEvent = () => {
                 newRegistrationData.img = data.img
                 setRegistrationData(newRegistrationData)
             })
-    }, [])
+    }, [id,registrationData])
 
     return (
         <div className="container">
             <div className="d-flex justify-content-center">
                 <form className="form-control m-5" onSubmit={handleSubmit}>
                     <h3>Register as a volunteer</h3>
-                    <input type="text" name="userName" placeholder="userName" value={user.name} /> <br /><br />
+                    <input type="text" name="userName" placeholder="userName" value={user?.name} /> <br /><br />
                     <input type="text" name="eventName" placeholder="eventName" value={event.name} /> <br /><br />
                     <textarea cols="100" rows="5" type="text" name="description" value={event.description} placeholder="Description" /> <br /><br />
                     <input type="date" onChange={handleDateChange} name="date" /> <br /><br />

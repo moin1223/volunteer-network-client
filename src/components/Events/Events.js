@@ -6,7 +6,7 @@ const Events = () => {
     
 // console.log(fakeData)
     // const addAllEvents = () => {
-    //     fetch('http://localhost:5000/addEvents', {
+    //     fetch('https://afternoon-ridge-02582.herokuapp.com/addEvents', {
     //         method: 'POST',
     //         headers: { 'Content-Type': 'application/json' },
     //         body: JSON.stringify(fakeData)
@@ -18,7 +18,7 @@ const Events = () => {
     const [eventData, setEventData] = useState([]);
 
     useEffect(()=> {
-        fetch('http://localhost:5000/events')
+        fetch('https://afternoon-ridge-02582.herokuapp.com/events')
         .then(res => res.json())
         .then(data => setEventData(data))
     }, [])

@@ -8,7 +8,7 @@ const SingleRegistration = (props) => {
     const history = useHistory();
 
     const handleDelete = () => {
-        fetch(`http://localhost:5000/deleteRegistration/${_id}`, {
+        fetch(`https://afternoon-ridge-02582.herokuapp.com/deleteRegistration/${_id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())

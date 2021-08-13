@@ -22,7 +22,7 @@ const RegisterEvent = () => {
         e.preventDefault();
         if (registrationData.date) {
             // console.log('ready for submit')
-            fetch('http://localhost:5000/addRegistration', {
+            fetch('https://afternoon-ridge-02582.herokuapp.com/addRegistration', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(registrationData)
@@ -39,7 +39,7 @@ const RegisterEvent = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/event/${id}`)
+        fetch(`https://afternoon-ridge-02582.herokuapp.com/event/${id}`)
             .then(res => res.json())
             .then(data => {
                 setEvent(data);

@@ -7,7 +7,7 @@ const AllRegistration = () => {
     const [registration, setRegistration] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/registrations`)
+        fetch(`https://afternoon-ridge-02582.herokuapp.com/registrations`)
             .then(res => res.json())
             .then(data => setRegistration(data))
     }, [])
